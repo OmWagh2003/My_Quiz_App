@@ -1,0 +1,26 @@
+CREATE TABLE question (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    category VARCHAR(50),
+    difficulty VARCHAR(20),
+    question TEXT,
+    option1 VARCHAR(200),
+    option2 VARCHAR(200),
+    option3 VARCHAR(200),
+    option4 VARCHAR(200),
+    correctans VARCHAR(200)
+);
+
+
+
+INSERT INTO questions (category, difficulty, question, option1, option2, option3, option4, correctans)
+VALUES
+('Java', 'Easy', 'Which keyword is used to create a subclass in Java?', 'extends', 'implements', 'inherits', 'instanceof', 'extends'),
+('Java', 'Easy', 'Which data type is used to create a variable that should store text?', 'String', 'Text', 'Character', 'int', 'String'),
+('Java', 'Medium', 'Which of these is a valid way to create a thread in Java?', 'Implement Runnable interface', 'Inherit the Thread class', 'Both A and B', 'None of the above', 'Both A and B'),
+('Java', 'Medium', 'What is the default value of a boolean variable in Java?', 'true', 'false', '0', 'null', 'false'),
+('Java', 'Hard', 'Which of the following is not a feature of Java?', 'Object-Oriented', 'Platform-Dependent', 'Multithreaded', 'Robust', 'Platform-Dependent'),
+('Java', 'Easy', 'What is the size of int in Java?', '2 bytes', '4 bytes', '8 bytes', '16 bytes', '4 bytes'),
+('Java', 'Medium', 'Which method is used to compare two strings in Java?', '== operator', 'equals()', 'compareTo()', 'Both B and C', 'Both B and C'),
+('Java', 'Hard', 'What does the "static" keyword mean in Java?', 'A variable shared by all instances of a class', 'A method that belongs to the class', 'Both A and B', 'None of the above', 'Both A and B'),
+('Java', 'Hard', 'Which of the following is true about Java exception handling?', 'try block must be followed by catch', 'finally block is optional', 'Only checked exceptions are handled', 'None of the above', 'finally block is optional'),
+('Java', 'Medium', 'Which package contains the Random class in Java?', 'java.util', 'java.lang', 'java.io', 'java.net', 'java.util');
